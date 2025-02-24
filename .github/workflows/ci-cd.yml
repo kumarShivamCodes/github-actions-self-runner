@@ -19,14 +19,6 @@ jobs:
         with:
           node-version: "18"
 
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: self-runner/node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('self-runner/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
       - name: Install dependencies
         run: npm ci
         working-directory: self-runner
