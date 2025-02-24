@@ -36,7 +36,12 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: source-code
-          path: .
+          path: |
+            self-runner/package.json
+            self-runner/package-lock.json
+            self-runner/src
+            self-runner/public
+            self-runner/Dockerfile
 
   docker-build-and-push:
     runs-on: ubuntu-latest
