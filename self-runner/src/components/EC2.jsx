@@ -1,6 +1,9 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/styles.css"; // Corrected the CSS file path
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function EC2() {
   return (
@@ -45,22 +48,22 @@ function EC2() {
                   <div className="responsive-container-block">
                     <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                       <p className="text-blk input-title">
-                        <i className="fas fa-user"></i> Shivam Kumar
+                        <FontAwesomeIcon icon={faUser} className="mr-2" /> Shivam Kumar
                       </p>
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p className="text-blk input-title">
-                        <i className="fas fa-phone"></i> 9973675298
+                        <FontAwesomeIcon icon={faPhone} className="mr-2" /> 9973675298
                       </p>
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p className="text-blk input-title">
-                        <i className="fas fa-envelope"></i> rajput.shivamhere@gmail.com
+                        <FontAwesomeIcon icon={faEnvelope} className="mr-2" /> rajput.shivamhere@gmail.com
                       </p>
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p className="text-blk input-title">
-                        <i className="fab fa-github"></i> <a href="https://github.com/kumarShivamCodes"> github</a>
+                        <FontAwesomeIcon icon={faGithub} className="mr-1" /> <a href="https://github.com/kumarShivamCodes"> github</a>
                       </p>
                     </div>
                   </div>
