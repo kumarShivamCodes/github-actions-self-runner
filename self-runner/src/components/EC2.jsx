@@ -63,7 +63,7 @@ function EC2() {
                     </div>
                     <div className="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                       <p className="text-blk input-title">
-                        <FontAwesomeIcon icon={faGithub} className="mr-1" /> <a href="https://github.com/kumarShivamCodes"> github</a>
+                        <FontAwesomeIcon icon={faGithub} className="mr-1" /> <a href="https://github.com/kumarShivamCodes"> GitHub</a>
                       </p>
                     </div>
                   </div>
