@@ -17,17 +17,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "14"
-          cache: "npm"
-          cache-dependency-path: self-runner/package-lock.json
+          node-version: "18"
+          # cache: "npm"
+          # cache-dependency-path: self-runner/package-lock.json
 
-      - name: Cache node_modules
-        uses: actions/cache@v4
-        with:
-          path: self-runner/node_modules
-          key: ${{ runner.os }}-node14-${{ hashFiles('self-runner/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node14-
+      # - name: Cache node_modules
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: self-runner/node_modules
+      #     key: ${{ runner.os }}-node14-${{ hashFiles('self-runner/package-lock.json') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-node14-
 
       - name: Install dependencies
         run: npm ci
