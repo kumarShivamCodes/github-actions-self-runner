@@ -44,7 +44,7 @@ function EC2() {
             <div className="responsive-container-block container">
               <div className="form-box">
                 <div className="container-block form-wrapper">
-                  <p className="text-blk contactus-head">Contact Us</p>
+                  <p className="text-blk contactus-head">Let's Get in touch</p>
                   <div className="responsive-container-block">
                     <div className="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt">
                       <p className="text-blk input-title">
